@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="circles">
+		<item>40m以上</item>
+		<item>60m以上</item>
+		<item>80m以上</item>
+		<item>100m以上</item>
+		<item>150m以上</item>
+	</string-array>
+</resources>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="jp.isao.lost_property_prevention"
+      android:versionCode="8"
+      android:versionName="1.10">
+    <uses-sdk android:minSdkVersion="4" />
+    
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+	<uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION"/>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+	
+		<!-- バイブレータを許可する -->
+	<uses-permission android:name="android.permission.VIBRATE"/>
+
+	<!-- Multi Screen に対応する -->
+	<supports-screens
+		android:smallScreens="true"
+		android:normalScreens="true"
+		android:largeScreens="true"
+		android:anyDensity="true"
+	/>
+
+    <application android:icon="@drawable/icon" android:label="@string/app_name" android:debuggable="true">
+    	<!-- Google Map 使用時に必要な記述 -->
+        <uses-library android:name="com.google.android.maps"/>
+    
+        <activity android:name=".activity.Main_Activity"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+		<activity android:name="com.google.ads.AdActivity" android:configChanges="keyboard|keyboardHidden|orientation"
+				/>
+        
+        <!--  -->
+        <activity android:name=".activity.Set_Add_Activity"
+        	      android:screenOrientation="portrait"
+        	      android:label="@string/set_add"
+        />
+        <activity android:name="jp.isao.lost_property_prevention.activity.Set_Edit_Activity"
+        	      android:screenOrientation="portrait"
+        	      android:label="@string/set_edit"
+        />
+        <activity android:name=".activity.Location_Check_Activity"
+        	      android:screenOrientation="portrait"
+        	      android:label="@string/location_check"
+        />
+        <activity android:name="jp.isao.lost_property_prevention.activity.NotifyMessage"
+        	      android:screenOrientation="portrait"
+        	      android:label="@string/title_notify"
+        />
+        
+        <!-- 通知メッセージのアクティビティ登録 -->
+        <activity android:name=".NotifyMessage"
+        	      android:screenOrientation="portrait"
+        	      android:label="@string/title_notify"
+        />
+        
+        <!-- レシーバクラスの登録 -->
+        <receiver android:name="jp.isao.lost_property_prevention.receiver.GetAwayHomeReceiver">
+        	<!-- インテントフィルタのリストを登録 -->
+        	<intent-filter>
+        		<action android:name= "android.intent.action.BOOT_COMPLETED" />
+        	</intent-filter>
+        </receiver>
+        
+        <!-- サービスクラスの登録 -->
+		<service android:name="jp.isao.lost_property_prevention.service.GetAwayHomeService">
+			<!-- 要注意！！　actionは必ず記述すること -->
+			<intent-filter>
+				<action android:name="jp.isao.lost_property_prevention.GetAwayHomeBindService" />
+			</intent-filter>
+		</service>
+
+    </application>
+</manifest>

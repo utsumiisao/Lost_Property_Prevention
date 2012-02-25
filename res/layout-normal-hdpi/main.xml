@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	>
+
+		<RelativeLayout
+			android:id="@android:id/empty"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:background="#ffa500"
+			android:layout_weight="1"
+			>
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/star_top"
+				android:textSize="8pt"
+				android:textColor="#ffffff"
+				android:text="☆　"
+				android:layout_alignParentLeft="true"
+			/>
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/explan1"
+				android:textSize="8pt"
+				android:textColor="#ffffff"
+				android:text="毎日持って行く、持ち物リストを作成しましょう。"
+				android:layout_toRightOf="@id/star_top"
+				/>
+			<TextView
+				android:id="@+id/space"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:textSize="8pt"
+				android:text=" "
+				android:layout_below="@id/explan1"
+				/>
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/star_bottom"
+				android:textSize="8pt"
+				android:textColor="#ffffff"
+				android:text="☆　"
+				android:layout_below="@id/space"
+				/>
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/explan2"
+				android:textSize="8pt"
+				android:textColor="#ffffff"
+				android:text="出かける前は持ち物をチェックし、忘れ物を無くしましょう。"
+				android:layout_toRightOf="@id/star_bottom"
+				android:layout_below="@id/space"
+				/>
+			
+		</RelativeLayout>
+
+		<ListView
+			android:id="@android:id/list"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:background="#ffa500"
+			android:layout_weight="1"
+			/>
+
+	
+
+	<Button
+		android:id="@+id/btn_schedule_gps_add"
+		android:layout_width="fill_parent"
+		android:layout_height="80dp"
+		android:text="@string/add_setup_btn"
+		android:textSize="10pt"
+		android:paddingRight="65dp"
+		android:drawableLeft="@drawable/check_add_btn_100_100"
+		/>
+	
+</LinearLayout>

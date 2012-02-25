@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">忘れ物知らず</string>
+    <!--  AddressBookInsert -->
+    <string name="title_main">忘れ物知らず</string>
+    <string name="location_check">位置情報</string>
+    <string name="set_add">設定追加</string>
+    <string name="set_edit">設定編集</string>
+    <string name="spinner_prompt">実行時間選択</string>
+    <string name="spinner_circle">起動距離選択</string>    
+    
+    <!--  AdressBookEdit -->
+    <string name="title_set">設定編集</string>
+    <!--  AdressBookEdit -->
+    <string name="title_notify">確認内容</string>
+    
+    <!--  AddressBookList -->
+    <string name="title_checkset">設定内容確認</string>
+    <!--  AddressBookList -->
+    <string name="title_mapview">位置の確認</string>
+    
+    <!-- レイアウトで使用する文字列 -->
+    <string name="location_info">　位置情報：　</string>
+    <string name="location_info_add_btn">位置情報の追加</string>
+    <string name="location_info_update_btn">位置情報の更新</string>    
+	<string name="location_info_check_btn">位置情報の確認</string> 
+    <string name="gps_start_time">　忘れ物監視時刻： </string>
+    <string name="gps_location_btn">位置</string>
+    <string name="add_setup_btn">リストを追加</string>
+    <string name="register_btn">登録</string>
+    <string name="network_btn">ネットワーク</string>
+    <string name="check_btn">確 認</string>
+    <string name="add_btn">追加</string>
+    <string name="gps_run_time_text">　忘れ物監視時間：</string>
+    <string name="run_day_of_week_text">　実行する曜日：</string>
+    <string name="monday_text"> 月　</string>
+    <string name="tuesday_text">火　</string>
+    <string name="wednesday_text">水　</string>
+    <string name="thursday_text">木　</string>
+    <string name="friday_text">金　</string>
+    <string name="saturday_text">土　</string>
+    <string name="sunday_text">日</string>
+    <string name="check_content_1">　確認内容 1： (最大30文字)</string>
+    <string name="check_content_2">　確認内容 2： (最大30文字)</string>
+    <string name="check_content_3">　確認内容 3： (最大30文字)</string>
+    <string name="check_content_4">　確認内容 4： (最大30文字)</string>
+    <string name="check_content_5">　確認内容 5： (最大30文字)</string>
+    <string name="check_content_6">　確認内容 6： (最大30文字)</string>
+    <string name="check_content_7">　確認内容 7： (最大30文字)</string>
+    <string name="check_content_8">　確認内容 8： (最大30文字)</string>
+    <string name="check_content_9">　確認内容 9： (最大30文字)</string>
+    <string name="check_content_10">　確認内容 10： (最大30文字)</string>
+    <string name="vibrate_run_time_text">　バイブレータの実行時間：　</string>
+    <string name="cancel_btn">キャンセル</string>
+    <string name="minute_text">分</string>
+    <string name="second_text">秒</string>
+    <string name="gps_run_circle">　通知発行距離：</string>
+    
+    
+    
+    
+    
+
+    
+</resources>
